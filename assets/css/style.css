@@ -887,6 +887,10 @@ textarea {
   height: 160px;
 }
 
+.cs_height_200 {
+  height: 220px;
+}
+
 @media screen and (max-width: 991px) {
   .cs_height_lg_1 {
     height: 1px;
@@ -1718,7 +1722,7 @@ textarea {
 .cs_list.cs_style_1 {
   display: grid;
   grid-gap: 25px 20px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 }
 @media (max-width: 767px) {
   .cs_list.cs_style_1 {
@@ -1756,7 +1760,7 @@ textarea {
 }
 .cs_list.cs_style_1 .cs_list_text {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.524em;
 }
 @media (max-width: 1400px) {
@@ -2858,15 +2862,10 @@ textarea {
 .cs_hero.cs_style_1 .cs_hero_shape3 {
   top: -220px;
   right: -143px;
-  height: 740px;
-  width: 740px;
-  border: 50px solid #fbaaab;
-  opacity: 0.03;
-  border-radius: 50%;
 }
 
 .cs_hero_title {
-  font-size: 68px;
+  font-size: 54px;
   line-height: 1.4em;
 }
 @media (max-width: 1400px) {

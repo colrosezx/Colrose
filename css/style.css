@@ -1,0 +1,22 @@
+.fa-telegram {
+    font-size: 32px; /* Размер иконки */
+    color: #ffffff;  /* Цвет Twitter (опционально) */
+    transition: color 0.5s ease;
+    margin: 0 10px 0px 20px; /* Плавное изменение цвета за 0.3 сек */
+  }
+
+.fa-telegram:hover {
+    color: #FF0000; /* Новый цвет при наведении (например, красный) */
+}
+
+
+.fa-whatsapp {
+    font-size: 32px; /* Размер иконки */
+    color: #ffffff;  /* Цвет Twitter (опционально) */
+    transition: color 0.5s ease;
+    margin: 0 10px 0px 0px; /* Плавное изменение цвета за 0.3 сек */
+  }
+
+.fa-whatsapp:hover {
+    color: #FF0000; /* Новый цвет при наведении (например, красный) */
+}
