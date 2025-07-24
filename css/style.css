@@ -20,3 +20,12 @@
 .fa-whatsapp:hover {
     color: #FF0000; /* Новый цвет при наведении (например, красный) */
 }
+
+.fullscreen-section {
+  min-height: 100vh;
+  background: white; /* или любой другой фон */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -169,11 +169,20 @@
   function slickInit() {
     $('.cs_slider').slick({
       centerMode: true,
-      focusOnSelect: true,
+      focusOnSelect: false,
       centerPadding: '290px',
       arrows: false,
-      dots: true,
       slidesToShow: 3,
+      infinite: true,          // Бесконечная прокрутка
+      autoplay: true,         // Включить автопрокрутку
+      autoplaySpeed: 0,       // Убираем задержку между слайдами
+      speed: 3000,            // Длительность анимации перехода (3 секунды)
+      cssEase: 'linear',
+      draggable: false, // Отключаем для второго слайдера
+      swipe: false,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      pauseOnDotsHover: false,     // Интервал 3 секунды (можно изменить)
       responsive: [
         {
           breakpoint: 1600,
@@ -208,12 +217,19 @@
         },
       ],
     });
+
     $('.cs_slider1').slick({
       dots: false,
       arrows: false,
       infinite: true,
       autoplay: true,
       slidesToShow: 2,
+      autoplaySpeed: 3000, 
+      draggable: false, // Отключаем для второго слайдера
+      swipe: false,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      pauseOnDotsHover: false     // Добавлено для синхронизации скорости
     });
   }
 

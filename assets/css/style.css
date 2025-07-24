@@ -2413,6 +2413,8 @@ textarea {
   gap: 20px;
   margin-bottom: 0;
   margin-top: 40px;
+  opacity: 0;
+  cursor: default;
 }
 .slick-dots button {
   padding: 0;
@@ -3164,17 +3166,16 @@ textarea {
   13. Testimonial
 ----------------------------------------------------------------*/
 .cs_testimonial.cs_style_1 {
-  min-width: 330px;
+  min-width: 370px;
   border-radius: 15px;
   background: #ffffff;
-  padding: 50px;
+  padding: 40px 23px;
   box-shadow: 0px 0px 20px 10px rgba(216, 216, 216, 0.25);
 }
 .cs_testimonial.cs_style_1 .cs_client_info {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 25px;
 }
 .cs_testimonial.cs_style_1 .cs_client_name {
   font-size: 22px;
@@ -3191,13 +3192,11 @@ textarea {
   flex: none;
   height: 60px;
   width: 60px;
-  border-radius: 50%;
   overflow: hidden;
 }
 .cs_testimonial.cs_style_1 .cs_client_img img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 .cs_testimonial.cs_style_1 .cs_rating {
   transform: scale(0.9);
