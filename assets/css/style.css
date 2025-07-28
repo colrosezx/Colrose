@@ -1984,8 +1984,13 @@ textarea {
   display: inline-block;
 }
 .cs_site_branding img {
-  max-height: 45px;
+  max-height: 35px;
+  margin-bottom: 4px;
 }
+
+/* .logo {
+  padding-bottom: 4px;
+} */
 
 @media screen and (min-width: 1200px) {
   .cs_main_header {
@@ -2520,10 +2525,12 @@ textarea {
 
 .cs_footer_logo {
   margin-bottom: 35px;
+  max-height: 55px;
 }
 @media (max-width: 991px) {
   .cs_footer_logo {
     margin-bottom: 15px;
+    max-height: 35px;
   }
 }
 
@@ -2538,7 +2545,7 @@ textarea {
   height: 35px;
   width: 35px;
   color: #ffffff;
-  border: 1px solid #ffffff;
+  margin-right: 15px;
 }
 .cs_social_btn.cs_style_1 a:hover {
   transform: translateY(-3px);
@@ -2817,7 +2824,7 @@ textarea {
   10. Hero
 ----------------------------------------------------------------*/
 .cs_hero.cs_style_1 {
-  background-color: #0d0c17;
+  background-color: #18063b;
   padding-top: 195px;
 }
 .cs_hero.cs_style_1 .container {
@@ -2985,7 +2992,8 @@ textarea {
   }
 }
 .cs_iconbox.cs_style_1 .cs_iconbox_icon {
-  height: 56px;
+  max-height: 56px;
+  max-width: 56px;
   margin-bottom: 25px;
 }
 .cs_iconbox.cs_style_1 .cs_iconbox_title {
