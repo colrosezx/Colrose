@@ -1,0 +1,29 @@
+.cs_post_details.cs_style_1 {
+    max-width: 800px; /* или 100%, если внутри контейнера */
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box; /* чтобы padding не влиял на ширину */
+}
+
+/* Для изображений внутри статьи */
+.cs_post_details img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Для двухколоночных изображений (если нужно ограничить и их) */
+.cs_post_details .row {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container-blog {
+    max-width: 800px;
+}
+
+.cs_site_header {
+    background-color: black;
+}
+

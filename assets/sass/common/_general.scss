@@ -364,8 +364,9 @@
 .cs_business_feature {
   .cs_featured_shape {
     position: absolute;
-    top: 300px;
+    top: 250px;
     right: 0;
+    z-index: -100;
 
     @media (max-width: 1199px) {
       display: none;
@@ -406,9 +407,6 @@
     padding: 0px 0 0px 45px;
     position: relative;
 
-    @media (max-width: 1400px) {
-      padding-left: 32px;
-    }
   }
 
   .cs_list_icon {
