@@ -50,9 +50,14 @@
 }
 
 .cs_gradient_bg_2 {
-  background: linear-gradient(90deg,
-      #f0fbf4 0.01%,
-      rgba(240, 251, 244, 0) 99.99%);
+  background: linear-gradient(
+    90deg,
+    #ddd6fe 0%,
+    rgba(221, 214, 254, 0.8) 25%,
+    rgba(221, 214, 254, 0.4) 60%,
+    rgba(221, 214, 254, 0.1) 85%,
+    rgba(221, 214, 254, 0) 100%
+  );
 }
 
 .cs_up_3_hover:hover {
@@ -383,11 +388,11 @@
 }
 
 .cs_feature_thumb_1 {
-  width: calc(100% + 60px);
+  width: calc(85% + 60px);
   padding-left: 60px;
 
   @media (max-width: 1400px) {
-    width: 100%;
+    width: 85%;
     padding-left: 0px;
   }
 }
@@ -431,6 +436,7 @@
     font-size: 22px;
     font-weight: 600;
     line-height: 1.524em;
+    color: rgb(30, 29, 29);
 
     @media (max-width: 1400px) {
       font-size: 20px;

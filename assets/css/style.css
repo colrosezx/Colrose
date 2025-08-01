@@ -1399,7 +1399,7 @@ textarea {
 }
 
 .cs_bg_accent {
-  background-color: #5b21b6;
+  background-color: #6D28D9;
 }
 
 .cs_bg_primary {
@@ -1423,7 +1423,7 @@ textarea {
 }
 
 .cs_gradient_bg_2 {
-  background: linear-gradient(90deg, #f0fbf4 0.01%, rgba(240, 251, 244, 0) 99.99%);
+  background: linear-gradient(90deg, #c4b5fd 0.01%, rgba(240, 251, 244, 0) 99.99%);
 }
 
 .cs_up_3_hover:hover {
@@ -1477,7 +1477,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #06b453;
+  background-color: #8b5cf6;
   color: #ffffff;
   font-size: 18px;
   cursor: pointer;
@@ -1651,7 +1651,7 @@ textarea {
   color: #ffffff;
 }
 .cs_btn.cs_bg_primary.cs_dark_hover::after {
-  background-color: #06b453;
+  background-color: #8b5cf6;
 }
 
 .cs_text_btn {
@@ -1675,7 +1675,7 @@ textarea {
   transform: translate(7px, 9px);
 }
 .cs_text_btn:hover {
-  color: #06b453;
+  color: #8b5cf6;
 }
 .cs_text_btn:hover svg:first-child {
   transform: translate(7px, 9px);
@@ -1710,12 +1710,12 @@ textarea {
 }
 
 .cs_feature_thumb_1 {
-  width: calc(100% + 60px);
+  width: calc(85% + 60px);
   padding-left: 60px;
 }
 @media (max-width: 1400px) {
   .cs_feature_thumb_1 {
-    width: 100%;
+    width: 85%;
     padding-left: 0px;
   }
 }
@@ -1756,7 +1756,6 @@ textarea {
 }
 .cs_list.cs_style_1 .cs_list_text {
   font-size: 20px;
-  font-weight: 500;
   line-height: 1.524em;
 }
 @media (max-width: 1400px) {
@@ -2459,7 +2458,7 @@ textarea {
   7. CTA
 ----------------------------------------------------------------*/
 .cs_cta.cs_style_1 {
-  background-color: #0d0c17;
+  background-color: #0f0229;
   padding: 90px 40px 100px;
   border-radius: 20px;
   overflow: hidden;
@@ -2487,20 +2486,20 @@ textarea {
 }
 .cs_cta.cs_style_1 .cs_cta_shape1 {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -40px;
+  right: -40px;
 }
 .cs_cta.cs_style_1 .cs_cta_shape2 {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 205px;
+  left: -60px
 }
 
 /*--------------------------------------------------------------
 8. Footer
 ----------------------------------------------------------------*/
 .cs_site_footer {
-  background-color: #0d0c17;
+  background-color: #0f0229;
 }
 .cs_site_footer .cs_footer_widget_title {
   color: #ffffff;
@@ -2562,7 +2561,7 @@ textarea {
   color: #ffffff;
 }
 .cs_footer_widget_nav a:hover {
-  color: #06b453;
+  color: #8b5cf6;
 }
 
 .cs_copyright_wrap {
@@ -3301,7 +3300,7 @@ textarea {
   }
 }
 .cs_accordian .cs_accordian_title:hover {
-  color: #06b453;
+  color: #6d28d9;
 }
 .cs_accordian .cs_accordian_body {
   padding: 0px 30px 30px 30px;
@@ -3360,7 +3359,7 @@ textarea {
   transition: all 0.4s ease-in-out;
 }
 .cs_post.cs_style_1 .cs_post_title:hover {
-  color: #06b453;
+  color: #8b5cf6;
 }
 .cs_post.cs_style_1 .cs_post_content_in {
   padding: 25px 30px 25px;
