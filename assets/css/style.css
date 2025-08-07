@@ -3363,6 +3363,7 @@ textarea {
 }
 .cs_post.cs_style_1 .cs_post_content_in {
   padding: 25px 30px 25px;
+  height: 230px;
 }
 .cs_post.cs_style_1 .cs_post_content_in .cs_post_meta_wrap {
   margin-bottom: 7px;
@@ -3509,12 +3510,12 @@ textarea {
   width: 100%;
 }
 .cs_post_details.cs_style_1 blockquote {
-  background: #f5faff;
+  background: #ede9fe;
   margin: 0;
   padding: 30px 40px 27px;
   font-size: 24px;
   line-height: 1.6em;
-  border-left: 5px solid #06b453;
+  border-left: 5px solid #5b21b6;
   border-radius: 7px;
   font-weight: 400;
   margin: 30px 0;
@@ -3526,7 +3527,7 @@ textarea {
   font-size: 16px;
 }
 .cs_post_details.cs_style_1 blockquote small span {
-  color: #06b453;
+  color: #5b21b6;
 }
 @media (max-width: 991px) {
   .cs_post_details.cs_style_1 blockquote {

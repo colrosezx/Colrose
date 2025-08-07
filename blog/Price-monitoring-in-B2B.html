@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colrose - мониторинг данных</title>
+  <!-- Favicon Icon -->
+  <link rel="icon" href="../assets/img/colrosemini.svg">
+  <!-- CSS plugins files -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="../assets/css/slick.css">
+  <link rel="stylesheet" href="../assets/css/animate.css">
+  <!-- Custome CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/articles.css">
+</head>
+
+<body>
+  <!-- Start Preloader -->
+  <div class="cs_perloader">
+    <div class="cs_perloader_in">
+      <div class="cs_perloader_dots_wrap">
+        <div class="cs_perloader_dots"><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+    <span class="cs_perloader_text">Loading...</span>
+  </div>
+  <!-- End Preloader -->
+  <!-- Start Header section -->
+  <header class="cs_site_header cs_style_1 cs_text_white cs_sticky_header cs_medium">
+    <div class="cs_main_header"> 
+      <div class="container">
+        <div class="cs_main_header_in">
+          <div class="cs_main_header_left">
+            <a class="cs_site_branding" href="../index.html">
+              <img src="../assets/img/Colroselogo.svg" alt="Logo" class="logo">
+            </a>
+          </div>
+          <div class="cs_main_header_center">
+            <nav class="cs_nav cs_medium cs_primary_font">
+              <ul class="cs_nav_list">
+                <li><a href="../index.html#features">Возможности</a></li>
+                <li><a href="../index.html#testimonial">Наш опыт</a></li>
+                <li><a href="../index.html#faq">Частые вопросы</a>
+                <li><a class="active_page" href="../blog.html">Блог</a></li>
+                <li><a href="../index.html#contact">Связаться с нами</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="cs_main_header_right">
+            <div class="cs_header_btns">
+              <a href="https://t.me/colrose" target="_blank">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+              <a href="https://wa.me/79221241690" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="cs_content">
+    <!-- End Header section -->
+    <div class="cs_height_150 cs_height_lg_50"></div>
+    <article class="cs_post_details cs_style_1">
+    <div class="cs_post_meta_wrap">
+        <div class="cs_post_meta">
+        <div class="cs_post_meta_icon cs_text_accent">
+            <i class="fa-regular fa-user"></i>
+        </div>
+        <p class="mb-0">Admin</p>
+        </div>
+        <div class="cs_post_meta">
+        <div class="cs_post_meta_icon cs_text_accent">
+            <i class="fa-regular fa-calendar"></i>
+        </div>
+        <p class="mb-0">06.08.2025</p>
+        </div>
+    </div>
+
+    <h3 class="cs_post_title">Мониторинг цен в B2B: как работать со сложными каталогами и кастомными прайсами</h3>
+
+    <p>
+        В сегменте B2B ценообразование — это отдельная вселенная. Здесь не работают простые парсеры с маркетплейсов и не хватает стандартных инструментов e-commerce-аналитики.
+        Каталоги — громоздкие, цены — зависят от клиента, а условия — нестабильны. Тем не менее, мониторинг цен в B2B возможен. Более того, он необходим.
+        В этой статье разберём, как компании могут контролировать B2B-рынок и строить эффективную ценовую политику даже при кастомных условиях.
+    </p>
+
+    <img src="../assets/img/blog-article-img-6.jpg" alt="Мониторинг цен в B2B">
+
+    <h3>Почему B2B сложнее B2C</h3>
+    <p>
+        Основные особенности B2B-сегмента, которые мешают прямому мониторингу цен:
+    </p>
+    <ul>
+        <li>Цены отображаются только после авторизации;</li>
+        <li>Прайсы зависят от объёма закупки и истории отношений;</li>
+        <li>Существуют разные ценовые уровни (дилер, дистрибьютор, опт, VIP);</li>
+        <li>Каталоги могут насчитывать сотни тысяч позиций с привязкой к техническим характеристикам;</li>
+        <li>Есть скрытые предложения, которые видны только конкретным клиентам.</li>
+    </ul>
+    <p>
+        Это делает стандартные инструменты B2C-мониторинга практически бесполезными. Нужен специализированный подход.
+    </p>
+
+    <h3>Как выстроить мониторинг в B2B</h3>
+    <p>
+        Успешные B2B-компании используют многоступенчатый подход:
+    </p>
+    <ol>
+        <li><strong>Авторизация и кастомные сессии:</strong> получение доступа к личным кабинетам для разных типов клиентов, моделирование поведения "под клиента".</li>
+        <li><strong>Прайс-листы и каталоги:</strong> загрузка и парсинг PDF, Excel, XML-документов — с регулярным обновлением.</li>
+        <li><strong>SKU-матрицы:</strong> сопоставление одинаковых позиций у разных поставщиков — даже если артикулы и названия различаются.</li>
+        <li><strong>Условия поставки:</strong> учёт скрытых наценок, скидок за объём, сроков доставки и индивидуальных бонусов.</li>
+        <li><strong>Интеграция с CRM/ERP:</strong> объединение внешних и внутренних данных по партнёрам, сделкам и историям заказов.</li>
+    </ol>
+
+    <h3>Что можно узнать из мониторинга</h3>
+    <ul>
+        <li>Реальные уровни цен на ключевые позиции у конкурентов;</li>
+        <li>Динамику изменения прайсов за последние месяцы;</li>
+        <li>Какие категории товаров субсидируются или продвигаются конкурентами;</li>
+        <li>Сигналы по дефициту или активному продвижению;</li>
+        <li>Появление новых SKU или поставщиков в ключевых сегментах.</li>
+    </ul>
+
+    <h3>Сложные каталоги: решение через семантику и ИИ</h3>
+    <p>
+        В B2B часто невозможно сопоставить товар "по названию". Например, у одного поставщика написано: "Клапан обратный DN100", у другого — "Клапан обрат. Ø100 сталь". 
+        Чтобы объединить позиции, используются:
+    </p>
+    <ul>
+        <li>Семантический анализ и нормализация описаний;</li>
+        <li>Категорийная классификация на основе словарей и ИИ-моделей;</li>
+        <li>Алгоритмы fuzzy matching и embedding-сопоставления;</li>
+        <li>Системы машинного обучения для поиска эквивалентов на основе характеристик.</li>
+    </ul>
+
+    <h3>Кастомные прайсы: как учитывать гибкие цены</h3>
+    <p>
+        Большинство B2B-компаний имеют несколько уровней цен:
+    </p>
+    <ul>
+        <li>Публичная цена (на сайте или в прайсе);</li>
+        <li>Контрактная цена для определённых партнёров;</li>
+        <li>Временные скидки или специальные условия (например, на квартал);</li>
+        <li>Индивидуальные бонусы, логистические надбавки и условия отсрочки оплаты.</li>
+    </ul>
+    <p>
+        Чтобы отслеживать это, необходимо:
+    </p>
+    <ol>
+        <li>Создать шаблоны расчёта полной стоимости с учётом всех надбавок;</li>
+        <li>Настроить парсинг скрытых параметров (например, через API или эмуляцию действий пользователя);</li>
+        <li>Хранить «цену сделки» в истории для выявления скрытых скидок.</li>
+    </ol>
+
+    <blockquote>
+        «Чем сложнее структура прайса, тем больше возможностей найти неочевидные конкурентные преимущества»  
+        <small>by: <span>Colrose</span></small>
+    </blockquote>
+
+    <h3>Пример: как один поставщик электрооборудования поднял маржинальность</h3>
+    <p>
+        Компания мониторила прайсы 8 конкурентов вручную. После внедрения автоматического сбора прайсов и сопоставления SKU они выяснили, что в 20% случаев продавали товары дешевле рынка. 
+        В течение квартала были скорректированы цены и пересмотрены скидочные политики. 
+        Итог — рост маржи на 7% без потери клиентов.
+    </p>
+
+    <h3>Что даёт такой мониторинг бизнесу</h3>
+    <ul>
+        <li>Контроль конкурентоспособности цен по ключевым клиентским сегментам;</li>
+        <li>Уменьшение «утечки» маржи из-за неграмотной скидочной политики;</li>
+        <li>Уверенность в актуальности прайсов на переговорах;</li>
+        <li>Быстрое реагирование на ценовые шаги конкурентов.</li>
+    </ul>
+
+    <p>
+        <a href="../index.html" class="cs_text_accent">Наша платформа мониторинга данных</a> позволяет автоматически собирать и обрабатывать B2B-прайсы, даже если они представлены в PDF, Excel или только доступны авторизованным пользователям. 
+        Мы решаем задачу нормализации, сопоставления и анализа цен в сложных товарных матрицах.
+    </p>
+
+    <p>
+        В B2B выигрывает не тот, кто продаёт дешевле, а тот, кто знает истинную ценность своих предложений и может аргументировать её. 
+        Мониторинг цен — это ваша уверенность в переговорах и инструмент повышения прибыли.
+    </p>
+
+    <div class="cs_height_50 cs_height_lg_60"></div>
+    <div class="cs_btn_group text-center">
+        <a href="../blog.html" class="cs_btn cs_bg_accent">Читать другие статьи</a>
+    </div>
+    </article>
+
+    <section id="contact">
+      <div class="cs_height_150 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_cta cs_style_1 text-center position-relative">
+          <div class="cs_cta_in">
+            <div class="cs_section_heading cs_style_1">
+              <h3 class="cs_section_title cs_text_white" style="font-size: 40px;">
+                Хотите внедрить мониторинг данных в свой бизнес?
+              </h3>
+              <p class="cs_section_subtitle mb-0">Мы разрабатываем с нуля персональные системы сбора данных и адаптируем уже имеющиеся. <br> Каждое решение делается под специфику вашей ниши, масштабы и KPI. <br>
+                Вы можете связаться с нами, и мы проговорим план дальнейших действий
+              </p>
+            </div>
+            <div class="cs_btn_group text-center">
+                <a href="https://boosty.to/colrose" class="cs_btn cs_bg_accent">Связаться с нами</a>
+                <a href="https://t.me/colrose" target="_blank">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="https://wa.me/79221241690" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>  
+            </div>
+          </div>
+          <div class="cs_cta_shape1">
+            <img src="../assets/img/colrosemedium.svg" alt="">
+          </div>
+          <div class="cs_cta_shape2">
+            <img src="../assets/img/colrosebig2.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="cs_height_150 cs_height_lg_80"></div>
+
+    </div>
+  <footer class="cs_site_footer cs_color_1 cs_sticky_footer">
+    <div class="cs_footer_shape1">
+      <img src="../assets/img/colrosebig2.svg" alt="Vector-Icon">
+    </div>
+    <div class="cs_height_140 cs_height_lg_70"></div>
+    <div class="cs_main_footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-xl-5">
+            <div class="cs_footer_widget">
+              <div class="cs_text_field">
+                <img src="../assets/img/Colroselogo.svg" alt="Logo" class="cs_footer_logo">
+                <p class="cs_text_white mb-0">
+                  Автоматизированный мониторинг и аналитика ассортимента и цен конкурентов для построения эффективной стратегии продаж, увеличения доли рынка и оперативного отслеживания изменений.
+                </p>
+              </div>
+            </div>
+            <p class="footer_gmail">Colrosenest@gmail.com</p>
+            <div class="cs_footer_widget">
+              <div class="cs_social_btn cs_style_1 d-flex">
+              <a href="https://t.me/colrose" target="_blank">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+              <a href="https://wa.me/79221241690" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              </div>
+            </div>
+            <div class="cs_height_0 cs_height_lg_30"></div>
+          </div>
+          <!-- .col -->
+          <div class="col-lg-3 col-xl-3 offset-lg-1">
+            <div class="cs_footer_widget">
+              <h2 class="cs_footer_widget_title">Навигация</h2>
+              <ul class="cs_footer_widget_nav cs_mp0">
+                <li>
+                  <a href="../index.html#home">Главная</a>
+                </li>
+                <li>
+                  <a href="../index.html#features">Возможности</a>
+                </li>
+                <li>
+                  <a href="../index.html#testimonial">Наш опыт</a>
+                </li>
+                <li>
+                  <a href="../blog.html">Блог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="cs_height_0 cs_height_lg_30"></div>
+          </div>
+          <!-- .col -->
+          <div class="col-xl-2 col-lg-3">
+            <div class="cs_footer_widget">
+              <h2 class="cs_footer_widget_title">Поддержка</h2>
+              <ul class="cs_footer_widget_nav cs_mp0">
+                <li>
+                  <a href="../index.html#faq">Частые вопросы</a>
+                </li>
+                <li>
+                  <a href="#contact">Связаться с нами</a>
+                </li>
+              </ul>
+            </div>
+            <div class="cs_height_0 cs_height_lg_30"></div>
+          </div>
+        </div>
+        <div class="cs_height_110 cs_height_lg_50"></div>
+      </div>
+      <div class="container cs_copyright_text cs_text_white text-center">© 2025 Colrose. Все права защищены.</div>
+    </div>
+  </footer>
+
+
+
+  <div id="cs_backtotop"><i class="fas fa-angle-up"></i></div>
+
+  <!-- All Scripts Files -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery.slick.min.js"></script>
+  <script src="../assets/js/wow.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
