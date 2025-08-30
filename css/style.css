@@ -6,7 +6,10 @@
 }
 
 .fa-telegram, 
-.fa-whatsapp {
+.fa-whatsapp,
+.fa-instagram,
+.fa-youtube,
+.boosty {
   font-size: 32px;
   color: #ffffff;
   transition: color 0.5s ease;
@@ -14,8 +17,66 @@
 }
 
 .fa-telegram:hover, 
-.fa-whatsapp:hover {
+.fa-whatsapp:hover,
+.fa-instagram:hover,
+.fa-youtube:hover,
+.boosty {
   color: #8b5cf6;
+}
+
+.fa-telegram.social_networks_icons,
+.fa-whatsapp.social_networks_icons,
+.fa-instagram.social_networks_icons,
+.fa-youtube.social_networks_icons,
+.boosty.social_networks_icons {
+  font-size: 60px !important;
+}
+
+.boosty_2 {
+  color: white;
+  transition: color 0.5s ease;
+  margin: 0 10px;
+}
+
+.boosty_2:hover {
+  color: #8b5cf6;
+}
+
+.svg-link {
+  display: inline-flex;         /* делаем флекс-контейнер */
+  align-items: center;          /* центрируем по вертикали */
+  justify-content: center;      /* центрируем по горизонтали */                /* фиксированная ширина ссылки */
+  height: 60px;                 /* фиксированная высота ссылки */
+  text-decoration: none;        /* убираем подчёркивание */
+}
+
+.svg-link svg {
+  width: 50px;                  /* размер SVG */
+  height: 50px;
+}
+
+.boosty.social_networks_icons {
+  font-size: 30px !important;
+}
+.cs_section_title.netwotks_title {
+  font-size: 37px !important;
+}
+
+.head_contact_info {
+  text-align: center;
+  margin: 15px 0;            /* расстояние между почтой и телефоном */
+}
+
+.header_container {
+  max-width: 1800px;
+}
+
+.center-links {
+  display: flex;
+  justify-content: center;  /* горизонтально по центру */
+  align-items: center;      /* вертикально по центру */
+  height: 100%;
+  font-size: 12px;        /* контейнер должен иметь высоту */
 }
 
 /* Опционально: для очень маленьких экранов можно уменьшить размер иконок */
@@ -55,6 +116,16 @@
   font-size: 16px; /* Размер текста */
   color: #b4b4b4;  /* Цвет текста */
   margin-bottom: 30px; /* Отступ сверху */
+}
+
+.header_gmail {
+  font-size: 12px; /* Размер текста */
+  color: white;  /* Цвет текста */
+}
+
+.header_phone {
+  font-size: 12px; /* Размер текста */
+  color: white;  /* Цвет текста */
 }
 
 .read_more_articles {
@@ -106,4 +177,106 @@
 .cs_text_btn:hover svg:first-of-type {
   opacity: 1;
   transform: translate(0, -50%);
+}
+
+
+@media (max-width: 992px) {
+  .banners-grid {
+    grid-template-columns: 1fr; /* один баннер в ряд */
+  }
+}
+
+.netwotks_title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.icons_container {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* динамическое количество колонок */
+  justify-items: center;  /* центрируем иконки по горизонтали */
+  gap: 10px;              /* отступы между иконками */
+}
+
+/* Ограничение для мобильных устройств (максимум 3 в ряд) */
+@media (max-width: 768px) {
+  .icons_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Ограничение для мобильных устройств (максимум 3 в ряд) */
+@media (max-width: 768px) {
+  .social_networks_icons {
+    font-size: 30px !important;
+  }
+}
+
+
+#social_networks .container {
+  display: flex;            /* делаем флекс для центрирования */
+  justify-content: center;  /* горизонтальное центрирование */
+  width: 100%;              /* оставляем на всю ширину родителя */
+}
+
+.cs_cta.networks_block {
+  max-width: 100px !important;         /* ограничиваем ширину баннера */
+  width: 100% !important;              /* адаптивная ширина внутри max-width */
+  margin: 0 !important;                /* убираем лишние маргины */
+  padding: 0px 0px !important;
+}
+
+
+.cs_cta.networks {
+  padding: 60px 200px !important;
+}
+
+@media (max-width: 968px) {
+  .cs_cta.networks {
+    padding: 60px 100px !important;
+  }
+}
+
+@media (max-width: 498px) {
+  .cs_cta.networks {
+    padding: 60px 50px !important;
+  }
+}
+
+.responsive-toggle {
+  visibility: hidden; /* скрыть, но сохранить пространство */
+}
+
+/* < 1200px */
+@media (max-width: 1199px) {
+  .responsive-toggle {
+    visibility: visible;
+  }
+}
+
+/* > 1300px */
+@media (min-width: 1301px) {
+  .responsive-toggle {
+    visibility: visible;
+  }
+}
+
+.center-links {
+  display: flex;
+  justify-content: center;  /* горизонтально по центру */
+  align-items: center;      /* вертикально по центру */
+  height: 100%;
+  font-size: 12px;        /* контейнер должен иметь высоту */
+}
+
+/* показываем, если меньше 1200 */
+@media (max-width: 1199px) {
+  .center-links {
+    justify-content: flex-start;
+    font-size: 14px;
+    margin: 70px 0;        /* контейнер должен иметь высоту */
+  }
 }
