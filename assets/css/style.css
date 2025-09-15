@@ -1568,6 +1568,7 @@ textarea {
   .cs_btn {
     width: 100%;
     justify-content: center;
+    font-size: 14px;
   }
   .cs_btn.cs_send {
     width: auto;
@@ -2885,7 +2886,7 @@ textarea {
 }
 @media (max-width: 575px) {
   .cs_hero_title {
-    font-size: 42px;
+    font-size: 32px;
   }
 }
 
