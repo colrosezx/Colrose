@@ -300,3 +300,7 @@
 .cs_hero.cs_style_1 .blog-container {
     padding-bottom: 30px;
 }
+
+.title_blog {
+  font-size: 32px !important;
+}
