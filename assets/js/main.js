@@ -323,4 +323,37 @@
       $('.cs_menu_toggle').removeClass("cs_toggle_active");
     }  
   }
+
+  /*--------------------------------------------------------------
+    12. Smooth scroll without # in URL
+  --------------------------------------------------------------*/
+  function smoothSectionScroll() {
+    $('a[data-scroll]').on('click', function (e) {
+      const sectionId = $(this).attr('data-scroll');
+
+      if (window.location.pathname === "/") {
+        e.preventDefault();
+        const el = document.getElementById(sectionId);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        sessionStorage.setItem("scrollTo", sectionId);
+      }
+    });
+
+    $(window).on('load', function () {
+      const sectionId = sessionStorage.getItem("scrollTo");
+      if (sectionId) {
+        const el = document.getElementById(sectionId);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+        sessionStorage.removeItem("scrollTo");
+      }
+    });
+  }
+
+  // запуск
+  smoothSectionScroll();
 })(jQuery); // End of use strict
