@@ -1,1 +1,7 @@
 GEMINI.md
+.env
+backend/
+__pycache__/
+*.pyc
+db.sqlite3
+postgres_data/
