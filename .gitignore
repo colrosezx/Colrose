@@ -1,7 +1,18 @@
 GEMINI.md
 .env
-backend/
 __pycache__/
 *.pyc
 db.sqlite3
 postgres_data/
+venv/
+ssl/
+
+# Django project files
+staticfiles/
+media/
+backups/
+
+# Ignore sensitive files and directories
+.env*
+!/.env-example
+nginx/ssl/

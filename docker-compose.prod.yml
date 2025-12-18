@@ -1,3 +1,10 @@
+# docker-compose.prod.yml
+# This file is optimized for production.
+# It assumes you have built your backend image with the latest code.
+#
+# To run:
+# docker-compose -f docker-compose.prod.yml up -d --build
+#
 version: '3.8'
 
 services:
@@ -14,13 +21,15 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
+    restart: always
 
   backend:
     build:
       context: .
-    command: gunicorn colrose_server.wsgi:application --bind 0.0.0.0:8000
+    command: gunicorn colrose_server.wsgi:application --bind 0.0.0.0:8000 --workers=4
     volumes:
-      - ./backend:/app
+      # In production, the code is copied into the image at build time.
+      # The volume mount for the code is removed to create an immutable container.
       - static_volume:/app/staticfiles
       - media_volume:/app/media
     depends_on:
@@ -33,20 +42,25 @@ services:
       - DEBUG=0
     secrets:
       - backend_env
+    restart: always
 
   nginx:
     build: ./nginx
     volumes:
+      # Mount the production Nginx config
+      - ./nginx/nginx.prod.conf:/etc/nginx/conf.d/default.conf:ro
+      # Mount static and media volumes
       - static_volume:/app/staticfiles
       - media_volume:/app/media
     ports:
       - "80:80"
-      - "8443:8443"
+      - "443:443"
     depends_on:
       - backend
     secrets:
       - ssl_cert
       - ssl_key
+    restart: always
 
 volumes:
   postgres_data:
@@ -55,8 +69,8 @@ volumes:
 
 secrets:
   backend_env:
-    file: ./.env
+    external: true
   ssl_cert:
-    file: ./nginx/ssl_local_dev/localhost.crt
+    external: true
   ssl_key:
-    file: ./nginx/ssl_local_dev/localhost.key
+    external: true

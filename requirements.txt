@@ -1,5 +1,6 @@
-Django==3.2
-psycopg2-binary
-python-dotenv
-beautifulsoup4
-lxml
+Django==4.2.11
+psycopg2-binary==2.9.9
+python-dotenv==1.0.1
+beautifulsoup4==4.12.3
+lxml==5.2.2
+gunicorn==22.0.0

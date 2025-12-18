@@ -1,0 +1,855 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colrose. Мониторинг товаров. Аналитика данных.</title>
+  <meta name="description" content="Разработка уникальных систем для мониторинга и аналитики данных с маркетплейсов, онлайн-площадок и магазинов.">
+  <link type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" rel="shortcut icon">
+  <link type="Image/x-icon" href="{% static 'assets/img/favicon.ico' %}" rel="icon">
+  <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
+  <!-- CSS plugins files -->
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/fontawesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+  <!-- Custome CSS -->
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Каноничная ссылка -->
+  <link rel="canonical" href="https://colrose.ru"/>
+  <meta name="zen-verification" content="YANdb8zBbGdGAv8adXqeYUMHfXx5gLUuZZ3VhMDJwgw2jyyRGgg5r9ObqQnSYVNs" />
+
+  <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104162298', 'ym');
+
+      ym(104162298, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/104162298" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Colrose",
+    "url": "https://colrose.ru",
+    "logo": "https://colrose.ru/favicon.png",
+    "description": "Colrose — сервис для мониторинга цен, анализа ассортимента, автоматического парсинга товаров с маркетплейсов и интернет-магазинов. Парсинг данных, конкурентная разведка, аналитика продаж, кастомные решения для e-commerce, малый и средний бизнес.",
+    "sameAs": [
+      "https://t.me/colrose",
+      "https://t.me/techcolrose",
+      "https://boosty.to/colrose",
+      "https://wa.me/79221241690"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+7-922-124-1690",
+      "contactType": "customer service",
+      "email": "Colrosenest@gmail.com",
+      "areaServed": ["RU", "KZ", "BY"],
+      "availableLanguage": ["Russian"]
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Мониторинг и анализ торговых площадок",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "WebSite",
+            "name": "Wildberries",
+            "url": "https://www.wildberries.ru",
+            "areaServed": "СНГ"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "WebSite",
+            "name": "Ozon",
+            "url": "https://www.ozon.ru",
+            "areaServed": "СНГ"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "WebSite",
+            "name": "Сбер Мегамаркет",
+            "url": "https://megamarket.ru",
+            "areaServed": "РФ"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "WebSite",
+            "name": "Л'Этуаль",
+            "url": "https://www.letu.ru",
+            "areaServed": "СНГ"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "WebSite",
+            "name": "Debenhams",
+            "url": "https://www.debenhams.com",
+            "areaServed": "Катар"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "WebSite",
+            "name": "Noon",
+            "url": "https://www.noon.com",
+            "areaServed": "Саудовская Аравия, ОАЭ"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "WebSite",
+            "name": "Skinfood",
+            "url": "https://www.skinfood.by",
+            "areaServed": "Беларусь"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "WebSite",
+            "name": "Boutiqaat",
+            "url": "https://www.boutiqaat.com",
+            "areaServed": "Кувейт, ОАЭ, Катар"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Мониторинг цен на маркетплейсах",
+            "description": "Автоматический сбор цен конкурентов с Wildberries, Ozon, СберМегаМаркет и других площадок.",
+            "serviceType": "Ценовой мониторинг"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Мониторинг ассортимента",
+            "description": "Извлечение данных о товарах, наличии, характеристиках и рейтингах с e-commerce сайтов.",
+            "serviceType": "Сбор и мониторинг данных"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "BI-аналитика продаж",
+            "description": "Дашборды, графики и отчёты по продажам и активности конкурентов.",
+            "serviceType": "Бизнес-аналитика"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Кастомные решения для e-commerce",
+            "description": "Разработка скриптов парсинга, API-интеграции и аналитических инструментов.",
+            "serviceType": "IT-услуги для бизнеса"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Аналитика товарной матрицы",
+            "description": "Оптимизация ассортимента: выявление неприбыльных позиций, прогнозирование спроса.",
+            "serviceType": "Товарная аналитика"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Мониторинг отзывов и рейтингов",
+            "description": "Сбор отзывов и оценок клиентов с маркетплейсов для анализа репутации.",
+            "serviceType": "Анализ репутации"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://colrose.ru"/>
+  <meta property="og:title" content="Colrose. Мониторинг товаров. Аналитика данных."/>
+  <meta property="og:description" content="Разработка уникальных систем для мониторинга и аналитики данных с маркетплейсов, онлайн-площадок и магазинов." />
+  <meta property="og:image" content="https://colrose.ru/{% static 'assets/img/colroselogoforog.png' %}"/>
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Colrose. Мониторинг товаров. Аналитика данных." />
+  <meta name="twitter:description" content="Разработка уникальных систем для мониторинга и аналитики данных с маркетплейсов, онлайн-площадок и магазинов." />
+  <meta name="twitter:image" content="https://colrose.ru/{% static 'assets/img/colroselogoforog.png' %}" />
+  <meta name="keywords" content="мониторинг товаров, мониторинг цен, аналитика продаж, анализ рынка, маркетплейсы, интернет-магазины, бизнес-анализ, отслеживание товаров, сбор данных, e-commerce аналитика, конкурентный анализ, управление ассортиментом">
+
+</head>
+
+<body>
+  <!-- Start Preloader -->
+  <div class="cs_perloader">
+    <div class="cs_perloader_in">
+      <div class="cs_perloader_dots_wrap">
+        <div class="cs_perloader_dots"><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+    <span class="cs_perloader_text">Loading...</span>
+  </div>
+  <!-- End Preloader -->
+  <!-- Start Header section -->
+  <header class="cs_site_header cs_style_1 cs_text_white cs_sticky_header cs_medium">
+    <div class="cs_main_header"> 
+      <div class="container">
+        <div class="cs_main_header_in">
+          <div class="cs_main_header_left">
+            <a class="cs_site_branding" href="/">
+              <img src="{% static 'assets/img/Colroselogo.svg' %}" alt="Logo" class="logo">
+            </a>
+          </div>
+          <div class="cs_main_header_center">
+            <nav class="cs_nav cs_medium cs_primary_font">
+              <ul class="cs_nav_list">
+                <li><a href="/" data-scroll="home">Главная</a></li>
+                <li><a href="/" data-scroll="features">Возможности</a></li>
+                <li><a href="/" data-scroll="testimonial">Наш опыт</a></li>
+                <li><a href="/" data-scroll="faq">Частые вопросы</a></li>
+                <li><a href="{% url 'post_list' %}">Блог</a></li>
+                <li><a href="/" data-scroll="contact">Связаться с нами</a></li> 
+                <div class="center-links responsive-toggle" role="presentation">
+                  <div>
+                      <li class="center-links-item"><a>Colrosenest@gmail.com</a></li>
+                      <li class="center-links-item"><a>+ 7 (922) 124-16-90</a></li>
+                  </div>
+                </div>   
+              </ul> 
+            </nav>
+          </div>
+          <div class="cs_main_header_right">
+            <div class="cs_header_btns">
+              <a href="https://t.me/techcolrose" target="_blank" rel="nofollow">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+              <a href="https://wa.me/79221241690" target="_blank" rel="nofollow">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="cs_content">
+    <!-- End Header section -->
+    <!-- Start Hero section -->
+    <section class="cs_hero cs_style_1 position-relative" id="home">
+      <div class="cs_height_70 cs_height_lg_20"></div>
+      <div class="container">
+        <div class="cs_hero_text text-center">
+          <h1 class="cs_hero_title cs_text_white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+            Увеличьте эффективность продаж с помощью актуальных данных
+          </h1>
+          <p class="cs_hero_subtitle wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.25s">
+            Мы собираем, обрабатываем и анализируем данные магазинов, онлайн-площадок и маркетплейсов <br>Можем адаптировать или разработать с нуля уникальное решение под цели и задачи вашего бизнеса
+          </p>
+        </div>
+        <div class="cs_btn_group text-center wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.25s">
+          <a href="/" data-scroll="social_networks" class="cs_btn cs_bg_accent">Наши социальные сети</a>
+            <a href="https://t.me/techcolrose" target="_blank" rel="nofollow">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="https://wa.me/79221241690" target="_blank" rel="nofollow">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+        <div class="cs_height_200 cs_height_lg_60"></div>
+      </div>
+      <div class="cs_hero_shape3"><img src="{% static 'assets/img/colrosebig.svg' %}" alt=""></div>
+    </section>
+    <!-- End Hero section -->
+    <!-- Start Featured section -->
+    <section class="cs_business_feature position-relative" id="features">
+      <div class="cs_height_133 cs_height_lg_75"></div>
+      <div class="container">
+        <div class="cs_section_heading cs_style_1 text-center">
+          <p class="cs_section_subtitle cs_text_accent wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Возможности нашего сервиса</p>
+          <h2 class="cs_section_title mb-0 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">Что наш продукт <br> может предоставить вашему бизнесу</h2>
+        </div>
+        <div class="cs_height_55 cs_height_lg_60"></div>
+        <div class="row cs_gap_y_30 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+          <div class="col-lg-6 col-xl-3">
+            <div class="cs_iconbox cs_style_1">
+              <div class="cs_iconbox_icon">
+                <img src="{% static 'assets/img/setup.svg' %}" alt="Icon">
+              </div>
+              <h3 class="cs_iconbox_title">Автоматический сбор данных</h3>
+              <p class="cs_iconbox_subtitle">Платформа автоматически собирает данные с любых источников, которые вам интересны: магазины конкурентов, поставщиков и диллеров, маркетплейсы, мобильные приложения и розничных точки.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-3">
+            <div class="cs_iconbox cs_style_1">
+              <div class="cs_iconbox_icon">
+                <img src="{% static 'assets/img/price_bar.svg' %}" alt="Icon">
+              </div>
+              <h3 class="cs_iconbox_title">Единый аналитический отчёт</h3>
+              <p class="cs_iconbox_subtitle">Все собранные параметры (цена, наличие, скидки, рейтинги, отзывы и др.) сводятся в единый отчёт в формате, который вы запросите. По вашему ТЗ мы можем провести аналитику полученных данных.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-3">
+            <div class="cs_iconbox cs_style_1">
+              <div class="cs_iconbox_icon">
+                <img src="{% static 'assets/img/marketicon.svg' %}" alt="Icon">
+              </div>
+              <h3 class="cs_iconbox_title">Полная картина рынка</h3>
+              <p class="cs_iconbox_subtitle">Система классифицирует и сопоставляет позиции участников рынка по множеству параметров. Это даёт полную картину про их ассортимент и позволяет сравнивать ценовые позиции аналогичных товаров.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-3">
+            <div class="cs_iconbox cs_style_1">
+              <div class="cs_iconbox_icon">
+                <img src="{% static 'assets/img/support.svg' %}" alt="Icon">
+              </div>
+              <h3 class="cs_iconbox_title">Поддержание сервиса</h3>
+              <p class="cs_iconbox_subtitle">Мы берем на себя поддержание проекта, гарантируем бесперебойные выгрузки товаров и проведения аналитики. Мы адаптируем наши решения в случае, если источник поменяет структуру.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_150 cs_height_lg_80"></div>
+    </section>
+    <!-- Software features -->
+    <section>
+      <div class="container">
+        <div class="row align-items-center cs_gap_y_40">
+          <div class="col-xl-6 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
+            <div class="cs_pr_45 text-center">
+              <img src="{% static 'assets/img/ColroseWomen.png' %}" alt="">
+            </div>
+          </div>
+          <div class="col-xl-6 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+            <div class="cs_section_heading cs_style_1">
+              <p class="cs_section_subtitle cs_text_accent">Какие потребности бизнеса мы закрываем?</p>
+              <h2 class="cs_section_title mb-0">Почему наше решение полезно для вас</h2>
+            </div>
+            <div class="cs_height_60 cs_height_lg_40"></div>
+            <div class="row cs_gap_y_40">
+              <div class="col-lg-6">
+                <div class="cs_iconbox cs_style_2">
+                  <div class="cs_number_box cs_bg_accent cs_text_white">01</div>
+                  <h3 class="cs_iconbox_title">Большие объемы данных</h3>
+                  <p class="cs_iconbox_subtitle">Ручной мониторинг данных требует много ресурсов. При высоких объёмах информации такой подход становится неэффективным.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="cs_iconbox cs_style_2">
+                  <div class="cs_number_box cs_bg_accent cs_text_white">02</div>
+                  <h3 class="cs_iconbox_title">Человеческий фактор</h3>
+                  <p class="cs_iconbox_subtitle">Человеческий фактор приводит к ошибкам в учёте цен и остатков, из-за чего компания упускает прибыль, либо терпит финансовые потери. 
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="cs_iconbox cs_style_2">
+                  <div class="cs_number_box cs_bg_accent cs_text_white">03</div>
+                  <h3 class="cs_iconbox_title">Динамика рынка</h3>
+                  <p class="cs_iconbox_subtitle">Рынок быстро меняется и требует быстрой реакции: без автоматизации тяжело своевременно менять ценовую политику и ассортимент.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="cs_iconbox cs_style_2">
+                  <div class="cs_number_box cs_bg_accent cs_text_white">04</div>
+                  <h3 class="cs_iconbox_title">Выявление возможностей</h3>
+                  <p class="cs_iconbox_subtitle">Система находит закономерности, которые сложно увидеть вручную: сезонность, всплески интереса, растущие категории и бренды.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_150 cs_height_lg_75"></div>
+    </section>
+    <!-- Users features -->
+    <section class="cs_user_feature">
+      <div class="container">
+        <div class="row align-items-center cs_gap_y_40 cs_reverse_lg">
+          <div class="col-xl-6 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+            <div class="cs_section_heading cs_style_1">
+              <p class="cs_section_subtitle cs_text_accent"></p>
+              <h2 class="cs_section_title mb-0">Какую аналитику можем предоставить</h2>
+            </div>
+            <div class="cs_height_40 cs_height_lg_40"></div>
+            <ul class="cs_list cs_style_1 cs_mp0">
+              <li>
+                <span class="cs_list_text">• Процентное распределение брендов внутри магазинов.</span>
+              </li>
+              <li>
+                <span class="cs_list_text">• Анализ наличия и ассортимента ваших конкурентов.</span>
+              </li>
+              <li>
+                <span class="cs_list_text">• Оценка позиций относительно средней рыночной цены.</span>
+              </li>
+              <li>
+                <span class="cs_list_text">• Поиск лучших цен на товар.</span>
+              </li>
+              <li>
+                <span class="cs_list_text">• Сопоставление и классификация товаров.</span>
+              </li>
+              <li>
+                <span class="cs_list_text">• Также мы можем провести аналитику по вашим требованиям.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-6 wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s">
+            <div class="cs_feature_thumb_1 text-center">
+              <img src="{% static 'assets/img/ColroseMen.png' %}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Featured section -->
+    <!--Start Testimonial Section -->
+    <section id="testimonial">
+      <div class="cs_height_150 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading cs_style_1 text-center">
+          <h2 class="cs_section_title mb-0 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">Кого мониторим прямо сейчас</h2>
+        </div>
+        <div class="cs_height_85 cs_height_lg_60"></div>
+      </div>
+      <div class="cs_slider wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+        <div class="cs_testimonial cs_style_1">
+          <div class="cs_client_info">
+            <div class="cs_client_img">
+              <img src="{% static 'assets/img/lamoda.svg' %}" alt="avatar1">
+            </div>
+            <div class="cs_client_meta">
+              <h4 class="cs_client_name">Lamoda</h4>
+              <p class="mb-0">Интернет магазин</p>
+            </div>
+          </div>
+        </div>
+        <div class="cs_testimonial cs_style_1">
+          <div class="cs_client_info">
+            <div class="cs_client_img">
+              <img src="{% static 'assets/img/wb.svg' %}" alt="avatar1">
+            </div>
+            <div class="cs_client_meta">
+              <h4 class="cs_client_name">Wildberries</h4>
+              <p class="mb-0">Онлайн маркетплейс</p>
+            </div>
+          </div>
+        </div>
+        <div class="cs_testimonial cs_style_1">
+          <div class="cs_client_info">
+            <div class="cs_client_img">
+              <img src="{% static 'assets/img/magnit.svg' %}" alt="avatar1">
+            </div>
+            <div class="cs_client_meta">
+              <h4 class="cs_client_name">Магнит</h4>
+              <p class="mb-0">Сеть розничных магазинов</p>
+            </div>
+          </div>
+        </div>
+        <div class="cs_testimonial cs_style_1">
+          <div class="cs_client_info">
+            <div class="cs_client_img">
+              <img src="{% static 'assets/img/mmarket.svg' %}" alt="avatar1">
+            </div>
+            <div class="cs_client_meta">
+              <h4 class="cs_client_name">Мегамаркет</h4>
+              <p class="mb-0">Маркетплейс Сбера</p>
+            </div>
+          </div>
+        </div>
+        <div class="cs_testimonial cs_style_1">
+          <div class="cs_client_info">
+            <div class="cs_client_img">
+              <img src="{% static 'assets/img/letu.svg' %}" alt="avatar1">
+            </div>
+            <div class="cs_client_meta">
+              <h4 class="cs_client_name">Л’Этуаль</h4>
+              <p class="mb-0">Сеть косметики и ухода</p>
+            </div>
+          </div>
+        </div>
+        <div class="cs_testimonial cs_style_1">
+          <div class="cs_client_info">
+            <div class="cs_client_img">
+              <img src="{% static 'assets/img/noon.svg' %}" alt="avatar1">
+            </div>
+            <div class="cs_client_meta">
+              <h4 class="cs_client_name">Noon</h4>
+              <p class="mb-0">Международный маркетплейс</p>
+            </div>
+          </div>
+        </div>
+        <div class="cs_testimonial cs_style_1">
+          <div class="cs_client_info">
+            <div class="cs_client_img">
+              <img src="{% static 'assets/img/kaspi.svg' %}" alt="avatar1">
+            </div>
+            <div class="cs_client_meta">
+              <h4 class="cs_client_name">Kaspi</h4>
+              <p class="mb-0">Казахстанский маркетплейс</p>
+            </div>
+          </div>
+        </div>
+        <div class="cs_testimonial cs_style_1">
+          <div class="cs_client_info">
+            <div class="cs_client_img">
+              <img src="{% static 'assets/img/ozon.svg' %}" alt="avatar1">
+            </div>
+            <div class="cs_client_meta">
+              <h4 class="cs_client_name">Ozon</h4>
+              <p class="mb-0">Онлайн маркетплейс</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="pagination"></div> -->
+      </div>
+    </section>
+    <!--End Testimonial Section -->
+    <!--Start FAQ's section -->
+    <section class="cs_faq_wrap position-relative" id="faq">
+      <div class="cs_height_143 cs_height_lg_75"></div>
+      <div class="container">
+        <div class="cs_section_heading cs_style_1 text-center">
+          <p class="cs_section_subtitle cs_text_accent wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">FAQ
+          </p>
+          <h2 class="cs_section_title mb-0 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">Часто задаваемые вопросы</h2>
+        </div>
+        <div class="cs_height_85 cs_height_lg_60"></div>
+        <div class="row wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+          <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+            <div class="cs_accordian_wrap">
+              <div class="cs_accordian active">
+                <h2 class="cs_accordian_title">
+                  Какие форматы данных можно экспортировать?
+                  <span class="cs_accordian_toggle">
+                    <span></span>
+                  </span>
+                </h2>
+                <div class="cs_accordian_body">
+                  Вы можете экспортировать данные в различных форматах, включая CSV, JSON, XML и Excel, что облегчает интеграцию с вашими системами.
+                </div>
+              </div>
+              <!-- .cs_accordian -->
+              <div class="cs_accordian">
+                <h2 class="cs_accordian_title">
+                  Какие данные вы можете собирать с магазинов?
+                  <span class="cs_accordian_toggle">
+                    <span></span>
+                  </span>
+                </h2>
+                <div class="cs_accordian_body">
+                Мы можем собирать названия товаров, цены, скидки, артикулы, описания, характеристики, отзывы, рейтинги, наличие, категории и ссылки. При необходимости добавим другие поля.
+                </div>
+              </div>
+              <!-- .cs_accordian -->
+              <div class="cs_accordian">
+                <h2 class="cs_accordian_title">
+                  Поддерживаете ли вы систему сбора данных после запуска?
+                  <span class="cs_accordian_toggle">
+                    <span></span>
+                  </span>
+                </h2>
+                <div class="cs_accordian_body">
+                  Да, мы берем на себя поддержание разработанной системы и гарантируем стабильные выгрузки данных.
+                </div>
+              </div>
+              <!-- .cs_accordian -->
+              <div class="cs_accordian">
+                <h2 class="cs_accordian_title">
+                  Как часто можете обновлять данные?
+                  <span class="cs_accordian_toggle"><span></span></span>
+                </h2>
+                <div class="cs_accordian_body">
+                  Зависит от ваших требований, в данный момент мы предоставляем выгрузки для клиентов в среднем раз в 2-3 дня.
+                </div>
+              </div>
+              <!-- .cs_accordian -->
+              <div class="cs_accordian">
+                <h2 class="cs_accordian_title">
+                  Законен ли парсинг интернет источников? Какие могут быть риски?
+                  <span class="cs_accordian_toggle">
+                    <span></span>
+                  </span>
+                </h2>
+                <div class="cs_accordian_body">
+                  Мы собираем только публичные данные, не выгружаем персональную информацию людей и не взламываем приватные API ключи. Действуем строго в рамках правового поля. 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End FAQ's section -->
+    <!--Start Blog Section -->
+    <section class="cs_blog" id="blog">
+      <div class="cs_height_150 cs_height_lg_75"></div>
+      <div class="container">
+        <div class="cs_section_heading cs_style_1 text-center">
+          <p class="cs_section_subtitle cs_text_accent wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Последние статьи</p>
+          <h2 class="cs_section_title mb-0 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"> Блог по мониторингу и аналитике данных<br></h2>
+        </div>
+        <div class="cs_height_85 cs_height_lg_60"></div>
+        <div class="row wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+          {% for post in latest_posts %}
+          <div class="col-lg-4">
+            <div class="cs_post cs_style_1">
+              <a href="{% url 'post_detail' post.slug %}" class="cs_post_link" style="display: block; text-decoration: none; color: inherit;">
+                <div class="cs_post_thumb">
+                  {% if post.image_path %}
+                  <img src="{% static post.image_path %}" alt="{{ post.title }}">
+                  {% else %}
+                  <img src="{% static 'assets/img/blog-article-img-18.jpg' %}" alt="Default Image">
+                  {% endif %}
+                </div>
+              </a>
+              <div class="cs_post_content">
+                <div class="cs_post_content_in">
+                  <div class="cs_post_meta_wrap">
+                    <div class="cs_post_meta">
+                      <div class="cs_post_meta_icon">
+                        <img src="{% static 'assets/img/user.svg' %}" alt="Image">
+                      </div>
+                      <p class="mb-0">
+                        Admin
+                      </p>
+                    </div>
+                    <div class="cs_post_meta">
+                      <div class="cs_post_meta_icon">
+                        <img src="{% static 'assets/img/label.svg' %}" alt="Image">
+                      </div>
+                      <p class="mb-0">
+                        {{ post.pub_date|date:"Y.m.d" }}
+                      </p>
+                    </div>
+                  </div>
+                  <a href="{% url 'post_detail' post.slug %}" class="cs_post_link" style="display: block; text-decoration: none; color: inherit;">
+                    <h2 class="cs_post_title">
+                      {{ post.title }}
+                    </h2>
+                  </a>
+                </div>
+                <div class="cs_post_user">
+                  <a href="{% url 'post_detail' post.slug %}" class="cs_post_link" style="display: block; text-decoration: none; color: inherit;">
+                    <span class="cs_text_btn">
+                      Читать статью
+                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.147 1.75739C10.147 1.28795 9.76649 0.907395 9.29705 0.907394L1.64705 0.907394C1.17761 0.907395 0.797048 1.28795 0.797048 1.75739C0.797048 2.22684 1.17761 2.60739 1.64705 2.60739H8.44705V9.4074C8.44705 9.87684 8.82761 10.2574 9.29705 10.2574C9.76649 10.2574 10.147 9.87684 10.147 9.4074L10.147 1.75739ZM1.41281 10.8437L9.89809 2.35844L8.69601 1.15635L0.210727 9.64163L1.41281 10.8437Z"
+                          fill="currentColor"></path>
+                      </svg>
+                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.147 1.75739C10.147 1.28795 9.76649 0.907395 9.29705 0.907394L1.64705 0.907394C1.17761 0.907395 0.797048 1.28795 0.797048 1.75739C0.797048 2.22684 1.17761 2.60739 1.64705 2.60739H8.44705V9.4074C8.44705 9.87684 8.82761 10.2574 9.29705 10.2574C9.76649 10.2574 10.147 9.87684 10.147 9.4074L10.147 1.75739ZM1.41281 10.8437L9.89809 2.35844L8.69601 1.15635L0.210727 9.64163L1.41281 10.8437Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="cs_height_lg_30"></div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="cs_height_70 cs_height_lg_80"></div>
+          <div style="text-align: center;">
+            <a href="{% url 'post_list' %}" class="cs_btn cs_bg_primary cs_dark_hover">Читать больше статей</a>
+          </div>
+        </div>
+    </section>
+    <!--End Blog Section -->
+    <!-- Start CTA section -->
+    <section id="contact">
+      <div class="cs_height_150 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_cta cs_style_1 text-center position-relative">
+          <div class="cs_cta_in">
+            <div class="cs_section_heading cs_style_1">
+              <h2 class="cs_section_title cs_text_white">Индивидуальный подход
+              </h2>
+              <p class="cs_section_subtitle mb-0">Мы разрабатываем с нуля персональные системы сбора данных и адаптируем уже имеющиеся. <br> Каждое решение делается под специфику вашей ниши, масштабы и KPI. <br>
+                Вы можете связаться с нами, и мы проговорим план дальнейших действий
+              </p>
+            </div>
+            <div class="cs_btn_group text-center">
+                <a href="/" data-scroll="social_networks" class="cs_btn cs_bg_accent">Наши социальные сети</a>
+                <a href="https://t.me/techcolrose" target="_blank">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="https://wa.me/79221241690" target="_blank" rel="nofollow">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>  
+            </div>
+          </div>
+          <div class="cs_cta_shape1">
+            <img src="{% static 'assets/img/colrosemedium.svg' %}" alt="">
+          </div>
+          <div class="cs_cta_shape2">
+            <img src="{% static 'assets/img/colrosebig2.svg' %}" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End CTA section -->
+    <!-- Start CTA section -->
+    <section id="social_networks">
+      <div class="cs_height_70 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="banners-grid">
+
+          <!-- Баннер 1 -->
+          <div class="cs_cta networks cs_style_1 text-center position-relative">
+            <div class="cs_cta_in networks_block">
+              <div class="cs_section_heading cs_style_1">
+                <h2 class="netwotks_title cs_section_title cs_text_white">Наши социальные сети</h2>
+                <p class="cs_section_subtitle mb-0">Делимся интересными статьями, кейсами, <br> новостями и инструментами
+                </p>
+              </div>
+              <div class="cs_btn_group text-center">
+                <div class="icons_container">
+                  <a href="https://t.me/colrose" target="_blank" rel="nofollow">
+                    <i class="fa-brands fa-telegram social_networks_icons"></i>
+                    <span class="sr-only">Telegram</span>
+                  </a>
+                  <a href="https://www.instagram.com/colrose_analytics?igsh=MWxnaTN2d25reTFpdg==" target="_blank" rel="nofollow">
+                    <i class="fa-brands fa-instagram social_networks_icons"></i>
+                    <span class="sr-only">Instagram</span>
+                  </a>
+                  <a href="https://boosty.to/colrose" target="_blank" class="svg-link" class="boosty svg_link social_networks_icons" rel="nofollow">
+                    <svg class="boosty_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" width="50" height="50" fill="currentColor">
+                      <path class="boosty_3" d="M1.10243 22.1029L7.48493 0H17.293L15.3151 6.85117L15.2565 6.96987L10.0487 25.0583H14.905C12.8684 30.1288 11.2821 34.1032 10.1474 36.98C1.18106 36.8828 -1.32569 30.4618 0.866557 22.866M10.1875 37L22.0121 19.9877H17.0016L21.3646 9.0835C28.8447 9.86667 32.3674 15.7589 30.2924 22.8845C28.0801 30.5404 19.1137 37 10.3817 37H10.1859H10.1875Z"/>
+                    </svg>
+                  </a>
+                  <a href="https://habr.com/ru/users/Colrose/" target="_blank" class="svg-link" class="boosty svg_link social_networks_icons" rel="nofollow">
+                    <svg class="boosty_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" width="50" height="50" fill="currentColor">
+                      <path class="boosty_3" d="M0 0V37H37V0H0ZM10.8302 6.16667H13.3477C15.227 6.16667 15.8761 6.21137 15.9192 6.34087C15.9485 6.44262 15.9624 8.45142 15.9624 10.8071L15.9501 15.0975L16.6839 14.447C17.6968 13.5513 18.5524 13.2337 20.1712 13.1766C21.2411 13.1473 21.6712 13.1905 22.422 13.451C24.0562 13.9999 25.2124 15.1268 25.8198 16.7903C26.0511 17.4393 26.0819 18.1207 26.1235 23.3963L26.1698 29.2917H21.0237V24.4801C21.0237 19.7395 21.0083 19.6809 20.6892 19.1028C20.2421 18.3366 19.7503 17.9897 18.9841 17.9034C17.669 17.76 16.7595 18.2071 16.2399 19.2755C15.9933 19.7688 15.964 20.2868 15.9501 24.4493C15.9347 26.993 15.9038 29.1205 15.9038 29.1776C15.8915 29.25 14.7476 29.2917 13.3601 29.2917H10.8317V17.7292L10.8302 6.16667Z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End CTA section -->
+    <div class="cs_height_73 cs_height_lg_75"></div>
+  </div>
+  <!--Start Footer Section -->
+  <footer class="cs_site_footer cs_color_1 cs_sticky_footer">
+    <div class="cs_footer_shape1">
+      <img src="{% static 'assets/img/colrosebig2.svg' %}" alt="Vector-Icon">
+    </div>
+    <div class="cs_height_140 cs_height_lg_70"></div>
+    <div class="cs_main_footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-xl-5">
+            <div class="cs_footer_widget">
+              <div class="cs_text_field">
+                <img src="{% static 'assets/img/Colroselogo.svg' %}" alt="Logo" class="cs_footer_logo">
+                <p class="cs_text_white mb-0">
+                  Автоматизированный мониторинг и аналитика ассортимента и цен конкурентов для построения эффективной стратегии продаж, увеличения доли рынка и оперативного отслеживания изменений.
+                </p>
+              </div>
+            </div>
+            <p class="footer_gmail">Colrosenest@gmail.com</p>
+            <p class="footer_phone">+ 7 (922) 124-16-90</p>
+            <div class="cs_footer_widget">
+              <div class="cs_social_btn cs_style_1 d-flex">
+              <a href="https://t.me/techcolrose" target="_blank" rel="nofollow">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+              <a href="https://wa.me/79221241690" target="_blank" rel="nofollow">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              </div>
+            </div>
+            <div class="cs_height_0 cs_height_lg_30"></div>
+          </div>
+          <!-- .col -->
+          <div class="col-lg-3 col-xl-3 offset-lg-1">
+            <div class="cs_footer_widget">
+              <h2 class="cs_footer_widget_title">Навигация</h2>
+              <ul class="cs_footer_widget_nav cs_mp0">
+                <li>
+                  <a href="/" data-scroll="home">Главная</a>
+                </li>
+                <li>
+                  <a href="/" data-scroll="features">Возможности</a>
+                </li>
+                <li>
+                  <a href="/" data-scroll="testimonial">Наш опыт</a>
+                </li>
+                <li>
+                  <a href="{% url 'post_list' %}">Блог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="cs_height_0 cs_height_lg_30"></div>
+          </div>
+          <!-- .col -->
+          <div class="col-xl-2 col-lg-3">
+            <div class="cs_footer_widget">
+              <h2 class="cs_footer_widget_title">Поддержка</h2>
+              <ul class="cs_footer_widget_nav cs_mp0">
+                <li>
+                  <a href="/" data-scroll="faq">Частые вопросы</a>
+                </li>
+                <li>
+                  <a href="/" data-scroll="contact">Связаться с нами</a>
+                </li>
+                <li>
+                  <a href="/" data-scroll="social_networks">Наши социальные сети</a>
+                </li>
+              </ul>
+            </div>
+            <div class="cs_height_0 cs_height_lg_30"></div>
+          </div>
+        </div>
+        <div class="cs_height_50 cs_height_lg_50"></div>
+      </div>
+      <div class="container cs_copyright_text cs_text_white text-center">© 2025 Colrose. Все права защищены.</div>
+    </div>
+  </footer>
+  <!--End Footer Section -->
+
+  <!-- Back to top btn -->
+  <div id="cs_backtotop"><i class="fas fa-angle-up"></i></div>
+
+  <!-- All Scripts Files -->
+  <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/js/jquery.slick.min.js' %}"></script>
+  <script src="{% static 'assets/js/wow.min.js' %}"></script>
+  <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>
