@@ -14,5 +14,9 @@ backups/
 
 # Ignore sensitive files and directories
 .env*
-!/.env-example
+!/.env.example
 nginx/ssl/
+nginx/ssl_local_dev/
+
+# Blog HTML files - content stored in database
+backend/blog_html/
