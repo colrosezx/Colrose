@@ -13,7 +13,6 @@ if [ -f "$SECRET_FILE" ]; then
     fi
   done < "$SECRET_FILE"
   echo "Environment variables loaded."
-  env | grep POSTGRES_ # Keep debugging line
 else
   echo "Secret file not found, continuing with existing environment variables."
 fi

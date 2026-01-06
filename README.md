@@ -21,7 +21,7 @@
 2.  **Создайте файл `.env`:** Скопируйте `.env-example` в `.env` и заполните его вашими **локальными** данными для разработки.
 
     ```sh
-    cp .env-example .env
+    cp .env.example .env
     ```
     *   Укажите `POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_DB`.
     *   Установите `DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1`.

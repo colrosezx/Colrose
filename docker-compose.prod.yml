@@ -1,12 +1,3 @@
-# docker-compose.prod.yml
-# This file is optimized for production.
-# It assumes you have built your backend image with the latest code.
-#
-# To run:
-# docker-compose -f docker-compose.prod.yml up -d --build
-#
-version: '3.8'
-
 services:
   db:
     image: postgres:13
